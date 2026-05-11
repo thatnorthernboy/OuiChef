@@ -1087,10 +1087,12 @@
       <h1>Your restaurant's<br /><em>reputation</em>, on autopilot.</h1>
       <p>OuiChef reads every new Google review and drafts a perfect reply in seconds. You just click Post. Stop losing customers to unanswered reviews.</p>
 
-      <div class="hero-form">
-        <input type="email" placeholder="Enter your work email" />
-        <a href="#" class="btn btn-gold">Start Free — 30 days</a>
-      </div>
+      <form class="hero-form" name="hero-trial" method="POST" netlify netlify-honeypot="bot-field" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="hero-trial" />
+        <input type="hidden" name="bot-field" />
+        <input type="email" name="email" placeholder="Enter your work email" required />
+        <button type="submit" class="btn btn-gold">Start Free — 30 days</button>
+      </form>
 
       <div class="hero-trust">
         <span class="stars" style="display:flex;gap:2px;align-items:center;color:var(--gold);">
@@ -1485,10 +1487,12 @@
       <span class="section-tag">Get Started</span>
       <h2>Your next 5-star reply<br />is 2 seconds away.</h2>
       <p>Join 500+ restaurant owners who said "Oui Chef!" and started growing their reputation on autopilot.</p>
-      <div class="cta-form">
-        <input type="email" placeholder="Your restaurant email" />
-        <a href="#" class="btn btn-gold">Start Free — 30 Days</a>
-      </div>
+      <form class="cta-form" name="cta-trial" method="POST" netlify netlify-honeypot="bot-field" action="/thank-you.html">
+        <input type="hidden" name="form-name" value="cta-trial" />
+        <input type="hidden" name="bot-field" />
+        <input type="email" name="email" placeholder="Your restaurant email" required />
+        <button type="submit" class="btn btn-gold">Start Free — 30 Days</button>
+      </form>
     </div>
   </section>
 

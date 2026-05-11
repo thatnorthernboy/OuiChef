@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're in — OuiChef</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d0c0b;
+      color: #f0ebe3;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f0ebe3;
+      margin-bottom: 48px;
+    }
+    .logo span { color: #e8b95a; }
+
+    .icon {
+      width: 72px; height: 72px;
+      background: rgba(201,150,58,0.12);
+      border: 1px solid rgba(201,150,58,0.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 32px;
+    }
+    .icon svg { width: 32px; height: 32px; color: #e8b95a; }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    h1 em { font-style: italic; color: #e8b95a; }
+
+    p {
+      color: #9e9189;
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 480px;
+      margin: 0 auto 40px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 400px;
+      margin: 0 auto 48px;
+      text-align: left;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #161412;
+      border: 1px solid rgba(201,150,58,0.15);
+      border-radius: 12px;
+      padding: 16px 20px;
+    }
+    .step-num {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(201,150,58,0.15);
+      color: #e8b95a;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 2px; }
+    .step-text p { font-size: 0.82rem; color: #9e9189; margin: 0; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      background: #c9963a;
+      color: #0d0c0b;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn:hover { background: #e8b95a; transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+
+  <div class="logo">Oui<span>Chef</span></div>
+
+  <div class="icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+      <polyline points="22 4 12 14.01 9 11.01"/>
+    </svg>
+  </div>
+
+  <h1>You're on the list.<br /><em>Oui Chef!</em></h1>
+
+  <p>We got your email. We'll be in touch within 24 hours to get your restaurant set up with a free 30-day trial.</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <h4>Check your inbox</h4>
+        <p>We'll send you a setup link within 24 hours.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <h4>Connect Google Business</h4>
+        <p>One click to link your restaurant profile.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <h4>Your first AI reply in minutes</h4>
+        <p>OuiChef starts drafting replies immediately.</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="/" class="btn">← Back to OuiChef</a>
+
+</body>
+</html>
